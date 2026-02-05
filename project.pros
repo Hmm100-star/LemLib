@@ -137,7 +137,7 @@
                 "version": "0.2.2"
             },
             "liblvgl": {
-                "location": "C:\\Users\\Liam Teale\\AppData\\Roaming\\PROS\\templates\\liblvgl@8.3.8",
+                "location": "/Users/jessechu/Library/Application Support/PROS/templates/liblvgl@8.3.8",
                 "metadata": {
                     "origin": "pros-mainline"
                 },
