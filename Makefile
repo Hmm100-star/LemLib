@@ -17,14 +17,15 @@ EXTRA_CFLAGS=
 EXTRA_CXXFLAGS=
 
 # Set to 1 to enable hot/cold linking
-USE_PACKAGE:=1
+USE_PACKAGE:=0
 
 # Add libraries you do not wish to include in the cold image here
 # EXCLUDE_COLD_LIBRARIES:= $(FWDIR)/your_library.a
 EXCLUDE_COLD_LIBRARIES:= 
 
-# Set this to 1 to add additional rules to compile your project as a PROS library template
-IS_LIBRARY:=1
+# Set to 1 to compile a PROS library template. Keep 0 for robot app uploads.
+# Override via `make IS_LIBRARY=1` when you want to build the template.
+IS_LIBRARY?=0
 LIBNAME:=LemLib
 VERSION:=0.6.0
 

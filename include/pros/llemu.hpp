@@ -24,6 +24,9 @@
 #include <cstdint>
 #include <string>
 
+// Ensure C API declarations are available for lcd_print.
+#include "pros/llemu.h"
+
 /******************************************************************************/
 /**                        LLEMU Conditional Include                         **/
 /**                                                                          **/
