@@ -19,8 +19,8 @@ lemlib::Drivetrain drivetrain(&left_motors, &right_motors, kTrackWidth, kWheelDi
                               kHorizontalDrift);
 
 // Odometry sensors (IMU + tracking wheels)
-pros::Rotation vertical_rotation(11, false);
-pros::Rotation horizontal_rotation(10, false);
+pros::Rotation vertical_rotation(11);
+pros::Rotation horizontal_rotation(10);
 lemlib::TrackingWheel vertical_tracking(&vertical_rotation, 2.0f, 0.0f);
 lemlib::TrackingWheel horizontal_tracking(&horizontal_rotation, 2.0f, 1.5f);
 lemlib::OdomSensors sensors(&vertical_tracking, nullptr, &horizontal_tracking, nullptr, &imu);
